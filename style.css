@@ -8,18 +8,6 @@
   --accent-soft: #e8eefb;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #111215;
-    --card: #1a1c21;
-    --text: #e8e9ec;
-    --muted: #9a9eaa;
-    --border: #2b2e35;
-    --accent: #7ea2ff;
-    --accent-soft: #1f2a44;
-  }
-}
-
 * {
   box-sizing: border-box;
 }
@@ -89,6 +77,168 @@ nav a:hover {
 nav a.active {
   color: var(--accent);
   background: var(--accent-soft);
+}
+
+/* Projects dropdown: opens on hover or keyboard focus */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown > a {
+  display: inline-block;
+}
+
+.dropdown .menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 15rem;
+  padding: 0.4rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.dropdown:hover .menu,
+.dropdown:focus-within .menu {
+  display: block;
+}
+
+.dropdown .menu a {
+  display: block;
+  white-space: nowrap;
+}
+
+/* Clickable project cards on the overview page */
+
+.card-link {
+  display: block;
+  color: inherit;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.card-link:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+}
+
+.card-link h3 {
+  color: var(--accent);
+}
+
+/* Compact side-by-side education cards on the home page */
+
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 1rem;
+}
+
+.card.compact {
+  margin: 0;
+  padding: 0.9rem 1.1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.card.compact h3 {
+  font-size: 1rem;
+}
+
+.card.compact p {
+  margin: 0.3rem 0 0;
+}
+
+.card.compact .entry-sub {
+  margin-bottom: 0.3rem;
+}
+
+.card.compact .honors {
+  margin-top: 0;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 1rem;
+}
+
+.project-grid .card {
+  margin: 0;
+}
+
+.project-grid p {
+  margin: 0.3rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.back {
+  margin: 0 0 1rem;
+}
+
+/* Contact form */
+
+.contact-form label {
+  display: block;
+  margin: 0 0 0.3rem;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin: 0 0 1rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+  border-color: var(--accent);
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+}
+
+/* Spam trap: hidden from people, bots fill it in */
+.contact-form .honey {
+  display: none;
+}
+
+/* Role / organization / date under a project title */
+
+.project-info {
+  margin: 0 0 1.5rem;
+  color: var(--muted);
+}
+
+.project-info p {
+  margin: 0;
+}
+
+.project-info .role {
+  color: var(--text);
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
 /* Layout */
@@ -170,6 +320,17 @@ li {
   font-style: italic;
 }
 
+.honors {
+  margin: -0.4rem 0 0;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.gpa {
+  margin: 0 0 0.6rem;
+  color: var(--muted);
+}
+
 .date {
   color: var(--muted);
   font-size: 0.95rem;
@@ -229,6 +390,26 @@ li {
   border-color: var(--accent);
   color: var(--accent);
   text-decoration: none;
+}
+
+.links.center {
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+
+.button.primary {
+  padding: 0.55rem 1.2rem;
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--card);
+  font-weight: 600;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.button.primary:hover {
+  color: var(--card);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
 }
 
 /* Stat tiles */

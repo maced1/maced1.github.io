@@ -13,9 +13,19 @@
     <a class="brand" href="index.html">Matthew Lee Siegel</a>
     <nav>
       <a href="index.html">Home</a>
-      <a class="active" href="projects.html">Projects</a>
+      <div class="dropdown">
+        <a class="active" href="projects.html">Projects &#9662;</a>
+        <div class="menu">
+          <a href="coco.html">Coco Robotics</a>
+          <a href="tunetank.html">TuneTank 2.0</a>
+          <a href="issue-labeler.html">GitHub Issue Auto-Labeler</a>
+          <a href="greenability.html">CI Energy Profiling</a>
+          <a href="fenix.html">Fenix XCell Storefronts</a>
+        </div>
+      </div>
       <a href="hobbies.html">Hobbies</a>
       <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
@@ -25,74 +35,35 @@
 <h1>Projects</h1>
 <p class="tagline">Machine learning, research, and web work</p>
 
-<div class="card" id="tunetank">
+<a class="card card-link" href="coco.html">
+  <div class="entry-head"><h3>Coco Robotics</h3><span class="date">Aug 2026 &ndash; present</span></div>
+  <p class="meta">Software Engineering Methodologies, Rice University &middot; Marketing &amp; Support Team Lead</p>
+  <ul class="tags"><li>React</li><li>React Native</li><li>TypeScript</li><li>JavaScript</li><li>Jest</li><li>GitHub Actions</li><li>Jira</li></ul>
+</a>
+
+<a class="card card-link" href="tunetank.html">
   <div class="entry-head"><h3>TuneTank 2.0</h3><span class="date">Jan 2026 &ndash; May 2026</span></div>
   <p class="meta">Laboratory for Analytic Sciences (LAS), NC State</p>
-  <p>
-  A pipeline that fine-tunes OpenAI's Whisper large-v3 speech recognition
-  model with as little manual work as possible. I worked on it with a team
-  of six for LAS.
-  </p>
-  <ul>
-    <li>Hyperparameter search with Optuna, successive halving, simulated annealing, and grid search, with pruning of bad trials.</li>
-    <li>LoRA (PEFT), layer freezing, and early stopping to cut GPU memory use and wasted compute.</li>
-    <li>Training loss, WER, and CER logged to Weights &amp; Biases, plus a Streamlit dashboard for comparing runs and picking the best model.</li>
-  </ul>
-  <ul class="tags">
-    <li>Python</li><li>PyTorch</li><li>Hugging Face</li><li>PEFT</li><li>Optuna</li><li>W&amp;B</li><li>Streamlit</li>
-  </ul>
-</div>
+  <ul class="tags"><li>Python</li><li>PyTorch</li><li>Hugging Face</li><li>PEFT</li><li>Optuna</li><li>W&amp;B</li><li>Streamlit</li></ul>
+</a>
 
-<div class="card" id="issue-labeler">
+<a class="card card-link" href="issue-labeler.html">
   <div class="entry-head"><h3>GitHub Issue Auto-Labeler</h3><span class="date">Aug 2025 &ndash; Dec 2025</span></div>
   <p class="meta">NC State, mentored by Rahul Pandita (GitHub)</p>
-  <p>
-  A text classifier that labels GitHub issues as bug, enhancement, or
-  question. Built by a team of three.
-  </p>
-  <ul>
-    <li>Pulled 803K issues from Google BigQuery with SQL.</li>
-    <li>Fine-tuned DistilBERT with LoRA on 15 TypeScript repositories and reached an F1 of 0.896, compared to 0.847 for zero-shot gpt-5-mini and 0.874 for human annotators.</li>
-    <li>Compared transformer models and GPU setups, which helped reduce GPU memory use by 44% with little loss in F1.</li>
-  </ul>
-  <ul class="tags">
-    <li>Python</li><li>PyTorch</li><li>Hugging Face</li><li>RoBERTa</li><li>DistilBERT</li><li>LoRA</li><li>W&amp;B</li><li>SQL</li><li>BigQuery</li>
-  </ul>
-</div>
+  <ul class="tags"><li>Python</li><li>PyTorch</li><li>Hugging Face</li><li>RoBERTa</li><li>DistilBERT</li><li>LoRA</li><li>W&amp;B</li><li>SQL</li><li>BigQuery</li></ul>
+</a>
 
-<div class="card" id="greenability">
+<a class="card card-link" href="greenability.html">
   <div class="entry-head"><h3>CI Energy Profiling</h3><span class="date">Jan 2025 &ndash; Aug 2025</span></div>
   <p class="meta">WiSER Software Engineering Lab, NC State</p>
-  <p>
-  Undergraduate research with Dr. Wesley Assun&ccedil;&atilde;o on how code
-  changes, refactoring, and version upgrades affect the energy used by
-  continuous integration.
-  </p>
-  <ul>
-    <li>Set up Eco-CI in GitHub Actions for pandas, Supabase, and qutebrowser.</li>
-    <li>Collected CPU, wattage, and energy (joules) per run into JSON for analysis.</li>
-  </ul>
-  <ul class="tags">
-    <li>Python</li><li>GitHub Actions</li><li>Eco-CI</li><li>YAML</li><li>Linux</li>
-  </ul>
-</div>
+  <ul class="tags"><li>Python</li><li>GitHub Actions</li><li>Eco-CI</li><li>YAML</li><li>Linux</li></ul>
+</a>
 
-<div class="card" id="fenix">
+<a class="card card-link" href="fenix.html">
   <div class="entry-head"><h3>Fenix XCell Storefronts</h3><span class="date">May 2024 &ndash; Dec 2024</span></div>
   <p class="meta">Internship, Bangkok, Thailand</p>
-  <p>
-  Built and launched two Shopify stores for an apparel company: a retail
-  site, <a href="https://fenixcell.com">fenixcell.com</a>, and a wholesale
-  site, <a href="https://fenix-custom.com">fenix-custom.com</a>.
-  </p>
-  <ul>
-    <li>Used Shopify Liquid and the REST and GraphQL APIs to keep inventory in sync and handle both retail and wholesale orders.</li>
-    <li>Ran A/B tests and set up Google Analytics events. Click-through rate went up 30%, session length went up 12%, and launch day brought in over $1,000.</li>
-  </ul>
-  <ul class="tags">
-    <li>Liquid</li><li>Shopify APIs</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>Google Analytics 4</li>
-  </ul>
-</div>
+  <ul class="tags"><li>Liquid</li><li>Shopify APIs</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>Google Analytics 4</li></ul>
+</a>
 
 </main>
 

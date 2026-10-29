@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TuneTank 2.0 - Matthew Lee Siegel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="index.html">Matthew Lee Siegel</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a class="active" href="projects.html">Projects &#9662;</a>
+        <div class="menu">
+          <a href="coco.html">Coco Robotics</a>
+          <a href="tunetank.html">TuneTank 2.0</a>
+          <a href="issue-labeler.html">GitHub Issue Auto-Labeler</a>
+          <a href="greenability.html">CI Energy Profiling</a>
+          <a href="fenix.html">Fenix XCell Storefronts</a>
+        </div>
+      </div>
+      <a href="hobbies.html">Hobbies</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="inner">
+
+<p class="back"><a href="projects.html">&larr; All projects</a></p>
+
+<h1>TuneTank 2.0</h1>
+<div class="project-info">
+  <p class="role">Software Developer</p>
+  <p>Laboratory for Analytic Sciences (LAS), NC State</p>
+  <p class="date">Jan 2026 &ndash; May 2026</p>
+</div>
+
+<div class="card">
+  <p>
+  A pipeline that fine-tunes OpenAI's Whisper large-v3 speech recognition
+  model with as little manual work as possible. I worked on it with a team
+  of six for LAS.
+  </p>
+  <ul>
+    <li>Hyperparameter search with Optuna, successive halving, simulated annealing, and grid search, with pruning of bad trials.</li>
+    <li>LoRA (PEFT), layer freezing, and early stopping to cut GPU memory use and wasted compute.</li>
+    <li>Training loss, WER, and CER logged to Weights &amp; Biases, plus a Streamlit dashboard for comparing runs and picking the best model.</li>
+  </ul>
+  <ul class="tags">
+    <li>Python</li><li>PyTorch</li><li>Hugging Face</li><li>PEFT</li><li>Optuna</li><li>W&amp;B</li><li>Streamlit</li>
+  </ul>
+</div>
+
+</main>
+
+<footer class="inner">Last updated October 2026.</footer>
+
+</body>
+</html>

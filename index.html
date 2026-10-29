@@ -13,9 +13,19 @@
     <a class="brand" href="index.html">Matthew Lee Siegel</a>
     <nav>
       <a class="active" href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
+      <div class="dropdown">
+        <a href="projects.html">Projects &#9662;</a>
+        <div class="menu">
+          <a href="coco.html">Coco Robotics</a>
+          <a href="tunetank.html">TuneTank 2.0</a>
+          <a href="issue-labeler.html">GitHub Issue Auto-Labeler</a>
+          <a href="greenability.html">CI Energy Profiling</a>
+          <a href="fenix.html">Fenix XCell Storefronts</a>
+        </div>
+      </div>
       <a href="hobbies.html">Hobbies</a>
       <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
@@ -23,29 +33,18 @@
 <main class="inner">
 
 <h1>Matthew Lee Siegel</h1>
-<p class="tagline">Master of Computer Science student at Rice University</p>
+<p class="tagline">MCS @ Rice University</p>
 
-<p>
-Before Rice I got my B.S. in Computer Science at NC State. Most of my recent
-work has been fine-tuning speech and language models, and I've also done
-research on CI energy usage and built a couple of Shopify storefronts.
-</p>
-
-<p>
-Outside of class I captain a Counter-Strike 2 team, compete in speedcubing,
-and serve as a reserve sergeant in the Royal Thai Army.
-More on the <a href="hobbies.html">hobbies page</a>.
-</p>
-
-<div class="links">
-  <a class="button" href="mailto:matthewleesiegel1@gmail.com">Email</a>
-  <a class="button" href="https://github.com/maced1">GitHub</a>
-  <a class="button" href="https://www.linkedin.com/in/matthew-lee-siegel-833299241/">LinkedIn</a>
+<div class="links center">
+  <a class="button" href="mailto:matthewleesiegel1@gmail.com">Email &nearr;</a>
+  <a class="button" href="https://github.com/maced1" target="_blank" rel="noopener">GitHub &nearr;</a>
+  <a class="button" href="https://www.linkedin.com/in/matthew-lee-siegel-833299241/" target="_blank" rel="noopener">LinkedIn &nearr;</a>
 </div>
 
 <h2>Education</h2>
 
-<div class="card">
+<div class="edu-grid">
+<div class="card compact">
   <div class="entry-head">
     <h3>Rice University</h3>
     <span class="date">Expected May 2028</span>
@@ -54,28 +53,32 @@ More on the <a href="hobbies.html">hobbies page</a>.
     <span>Master of Computer Science</span>
     <span>Houston, TX</span>
   </div>
-  <p><span class="label">Key coursework:</span> Deep Machine Learning, Software Engineering Methodologies, Workplace Communication</p>
+  <p><span class="label">Coursework:</span> Deep Machine Learning, Software Engineering Methodologies, Workplace Communication</p>
 </div>
 
-<div class="card">
+<div class="card compact">
   <div class="entry-head">
     <h3>NC State University</h3>
     <span class="date">May 2026</span>
   </div>
   <div class="entry-sub">
-    <span>Bachelor of Science, Computer Science &middot; GPA 3.8/4.0</span>
+    <span>B.S. Computer Science</span>
     <span>Raleigh, NC</span>
   </div>
-  <p><span class="label">Key coursework:</span> Software Engineering, Data Structures, Operating Systems, Network Security, C &amp; Software Tools</p>
+  <p class="gpa"><span class="honors">Summa Cum Laude</span> &middot; GPA 3.8/4.0</p>
+  <p><span class="label">SWE coursework:</span> Software Engineering, Data Structures, Operating Systems, Network Security, C &amp; Software Tools</p>
+  <p><span class="label">AI/ML coursework:</span> Natural Language Processing, Software Engineering, Operating Systems, Linear Algebra, Discrete Math</p>
+</div>
 </div>
 
 <h2>Recent projects</h2>
-<ul>
-  <li><a href="projects.html#tunetank">TuneTank 2.0</a> &ndash; automated Whisper fine-tuning pipeline</li>
-  <li><a href="projects.html#issue-labeler">GitHub issue auto-labeler</a> &ndash; NLP classifier for bugs, enhancements, and questions</li>
-  <li><a href="projects.html#greenability">CI energy profiling</a> &ndash; undergraduate research on software sustainability</li>
-  <li><a href="projects.html#fenix">Fenix XCell storefronts</a> &ndash; B2B and B2C Shopify sites</li>
-</ul>
+<div class="project-grid">
+  <a class="card card-link" href="coco.html"><h3>Coco Robotics</h3><p>React and React Native apps for a class startup</p></a>
+  <a class="card card-link" href="tunetank.html"><h3>TuneTank 2.0</h3><p>automated Whisper fine-tuning pipeline</p></a>
+  <a class="card card-link" href="issue-labeler.html"><h3>GitHub issue auto-labeler</h3><p>NLP classifier for bugs, enhancements, and questions</p></a>
+  <a class="card card-link" href="greenability.html"><h3>CI energy profiling</h3><p>undergraduate research on software sustainability</p></a>
+  <a class="card card-link" href="fenix.html"><h3>Fenix XCell storefronts</h3><p>B2B and B2C Shopify sites</p></a>
+</div>
 
 </main>
 
