@@ -8,44 +8,61 @@
 </head>
 <body>
 
-<nav>
-  <a href="index.html">Home</a> |
-  <a href="projects.html">Projects</a> |
-  <a href="about.html">About</a>
-</nav>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="index.html">Matthew Lee Siegel</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="hobbies.html">Hobbies</a>
+      <a class="active" href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main class="inner">
 
 <h1>About</h1>
+<p class="tagline">Leadership, skills, and languages. Education is on the <a href="index.html">home page</a>.</p>
 
-<h2>Education</h2>
+<h2>Leadership</h2>
 
-<h3>Rice University</h3>
-<p class="meta">Master of Computer Science, expected May 2028</p>
-<p>Courses: Deep Machine Learning, Software Engineering Methodologies, Workplace Communication</p>
+<div class="card">
+  <div class="entry-head"><h3>Rice Computer Science Graduate Student Association</h3><span class="date">Sept 2026 &ndash; present</span></div>
+  <p class="meta">Treasurer</p>
 
-<h3>NC State University</h3>
-<p class="meta">B.S. Computer Science, May 2026 &middot; GPA 3.8</p>
-<p>Courses: Natural Language Processing, Software Engineering, Operating Systems, Linear Algebra, Discrete Math</p>
+  <div class="entry-head"><h3>Rice Esports</h3><span class="date">Aug 2026 &ndash; present</span></div>
+  <p class="meta">Officer and CS2 team captain</p>
 
-<h2>Activities</h2>
-<ul>
-  <li>Treasurer, Rice Computer Science Graduate Student Association (2026 &ndash; present)</li>
-  <li>Officer and CS2 team captain, Rice Esports (2026 &ndash; present)</li>
-  <li>Treasurer and CS2 team captain, Esports Club at NC State (2022 &ndash; 2026)</li>
-  <li>Founder and treasurer, CubePack, NC State's Rubik's cube club (2025 &ndash; 2026)</li>
-  <li>Reserve sergeant, Territorial Defense, Royal Thai Army (2021 &ndash; present)</li>
-</ul>
+  <div class="entry-head"><h3>Esports Club at NC State</h3><span class="date">Aug 2022 &ndash; May 2026</span></div>
+  <p class="meta">Treasurer and CS2 team captain</p>
+
+  <div class="entry-head"><h3>CubePack, NC State Rubik's Cube Club</h3><span class="date">Mar 2025 &ndash; May 2026</span></div>
+  <p class="meta">Founder and treasurer</p>
+
+  <div class="entry-head"><h3>Territorial Defense, Royal Thai Army</h3><span class="date">Feb 2021 &ndash; present</span></div>
+  <p class="meta">Reserves sergeant</p>
+</div>
 
 <h2>Skills</h2>
-<ul>
-  <li>Languages: Python, Java, JavaScript, TypeScript</li>
-  <li>ML: PyTorch, Hugging Face (Transformers, PEFT), Whisper, DistilBERT, RoBERTa, Optuna, pandas, Streamlit</li>
-  <li>Tools: Weights &amp; Biases, AWS, GitHub Actions, Git, Linux</li>
-</ul>
+
+<div class="card">
+  <p><span class="label">Languages:</span> Python, JavaScript, TypeScript, Java, C, SQL</p>
+  <p><span class="label">Web:</span> React, React Native, Node.js, Flutter, HTML/CSS, REST APIs, GraphQL</p>
+  <p><span class="label">ML:</span> PyTorch, Hugging Face (Transformers, PEFT), Whisper, DistilBERT, RoBERTa, Optuna, Weights &amp; Biases, Streamlit</p>
+  <p><span class="label">Tools:</span> GitHub Actions, CI/CD, Jira, AWS, Linux, Claude Code, Codex</p>
+  <p><span class="label">Testing:</span> Jest, JUnit</p>
+</div>
 
 <h2>Spoken languages</h2>
-<p>Thai and English (fluent), Spanish and Mandarin (basic)</p>
 
-<footer>Last updated October 2026.</footer>
+<div class="card">
+  <p>Thai and English (fluent), Spanish and Mandarin (basic)</p>
+</div>
+
+</main>
+
+<footer class="inner">Last updated October 2026.</footer>
 
 </body>
 </html>
