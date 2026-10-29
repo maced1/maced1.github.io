@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects - Matthew Lee Siegel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a> |
+  <a href="projects.html">Projects</a> |
+  <a href="about.html">About</a>
+</nav>
+
+<h1>Projects</h1>
+
+<h2 id="tunetank">TuneTank 2.0</h2>
+<p class="meta">Jan 2026 &ndash; May 2026 &middot; Laboratory for Analytic Sciences (LAS), NC State</p>
+<p>
+A pipeline that fine-tunes OpenAI's Whisper large-v3 speech recognition
+model with as little manual work as possible. I worked on it with a team
+of six for LAS.
+</p>
+<ul>
+  <li>Hyperparameter search with Optuna, successive halving, simulated annealing, and grid search, with pruning of bad trials.</li>
+  <li>LoRA (PEFT), layer freezing, and early stopping to cut GPU memory use and wasted compute.</li>
+  <li>Training loss, WER, and CER logged to Weights &amp; Biases, plus a Streamlit dashboard for comparing runs and picking the best model.</li>
+</ul>
+<p>Python, PyTorch, Hugging Face Transformers/Datasets/PEFT, Optuna, W&amp;B, Streamlit</p>
+
+<h2 id="issue-labeler">GitHub Issue Auto-Labeler</h2>
+<p class="meta">Aug 2025 &ndash; Dec 2025 &middot; NC State, mentored by Rahul Pandita (GitHub)</p>
+<p>
+A text classifier that labels GitHub issues as bug, enhancement, or
+question. Built by a team of three.
+</p>
+<ul>
+  <li>Pulled 803K issues from Google BigQuery with SQL.</li>
+  <li>Fine-tuned DistilBERT with LoRA on 15 TypeScript repositories and reached an F1 of 0.896, compared to 0.847 for zero-shot gpt-5-mini and 0.874 for human annotators.</li>
+  <li>Compared transformer models and GPU setups, which helped reduce GPU memory use by 44% with little loss in F1.</li>
+</ul>
+<p>Python, PyTorch, Hugging Face, RoBERTa, DistilBERT, LoRA, W&amp;B, SQL, BigQuery</p>
+
+<h2 id="greenability">CI Energy Profiling</h2>
+<p class="meta">Jan 2025 &ndash; Aug 2025 &middot; WiSER Software Engineering Lab, NC State</p>
+<p>
+Undergraduate research with Dr. Wesley Assun&ccedil;&atilde;o on how code
+changes, refactoring, and version upgrades affect the energy used by
+continuous integration.
+</p>
+<ul>
+  <li>Set up Eco-CI in GitHub Actions for pandas, Supabase, and qutebrowser.</li>
+  <li>Collected CPU, wattage, and energy (joules) per run into JSON for analysis.</li>
+</ul>
+<p>Python, GitHub Actions, Eco-CI, YAML, Linux</p>
+
+<h2 id="fenix">Fenix XCell Storefronts</h2>
+<p class="meta">May 2024 &ndash; Dec 2024 &middot; Internship, Bangkok, Thailand</p>
+<p>
+Built and launched two Shopify stores for an apparel company: a retail
+site, <a href="https://fenixcell.com">fenixcell.com</a>, and a wholesale
+site, <a href="https://fenix-custom.com">fenix-custom.com</a>.
+</p>
+<ul>
+  <li>Used Shopify Liquid and the REST and GraphQL APIs to keep inventory in sync and handle both retail and wholesale orders.</li>
+  <li>Ran A/B tests and set up Google Analytics events. Click-through rate went up 30%, session length went up 12%, and launch day brought in over $1,000.</li>
+</ul>
+<p>Liquid, Shopify APIs, JavaScript, HTML, CSS, Google Analytics 4</p>
+
+<footer>Last updated October 2026.</footer>
+
+</body>
+</html>
