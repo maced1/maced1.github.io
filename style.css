@@ -469,6 +469,31 @@ th.num {
   text-align: right;
 }
 
+h4 {
+  margin: 1rem 0 0.3rem;
+  font-size: 0.95rem;
+}
+
+/* Tournament results: placement, event, year */
+
+.results td {
+  padding: 0.4rem 0.5rem;
+}
+
+.results .place {
+  width: 5.5rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.results tr.best .place {
+  color: var(--accent);
+}
+
+.results tr:last-child td {
+  border-bottom: none;
+}
+
 footer {
   padding-top: 1.5rem;
   padding-bottom: 2.5rem;
